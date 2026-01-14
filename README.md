@@ -1,5 +1,5 @@
 
-# Super Detailed Guide: Fine-Tuning DeepSeek Models with Unsloth + QLoRA, Distillation, and Ollama Deployment
+# Detailed Guide: Fine-Tuning DeepSeek Models with Unsloth + QLoRA, Distillation, and Ollama Deployment
 
 This is a comprehensive, beginner-friendly pipeline for fine-tuning DeepSeek models using **Unsloth + 4bit/8bit QLoRA**, optional distillation, and deployment via **Ollama** with dynamic LoRA loading.  
 All custom models/folders/outputs will use the prefix **`polo-super`**.
