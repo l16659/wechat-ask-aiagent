@@ -7,7 +7,8 @@ Polo-Super 是一个项目，目的是让用户能够基于 Hugging Face 下载�
 最终得到的大模型，主要目的是尽可能模仿我本人（@LeePolo7）与人聊天的风格、语气、习惯和表达方式，让它在日常对话中听起来像真人一样自然、熟悉、有个性。
 整个过程全部在本地完成，不依赖任何云服务，使用消费级硬件即可运行。
 
-# Detailed Guide: Fine-Tuning DeepSeek Models with Unsloth + QLoRA, Distillation, and Ollama Deployment
+# Detailed Guide
+## Fine-Tuning DeepSeek Models with Unsloth + QLoRA, Distillation, and Ollama Deployment
 
 This is a comprehensive, beginner-friendly pipeline for fine-tuning DeepSeek models using **Unsloth + 4bit/8bit QLoRA**, optional distillation, and deployment via **Ollama** with dynamic LoRA loading.  
 All custom models/folders/outputs will use the prefix **`polo-super`**.
@@ -33,21 +34,21 @@ All custom models/folders/outputs will use the prefix **`polo-super`**.
 
 ## Install packages
 
-# PyTorch with CUDA (adjust for your CUDA version if needed)
+### PyTorch with CUDA (adjust for your CUDA version if needed)
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 
-# Unsloth + ecosystem
+### Unsloth + ecosystem
 pip install "unsloth[cu124-torch240]" --no-deps
 pip install --no-deps xformers "trl<0.9.0" peft accelerate bitsandbytes datasets
 
-# qucik veryification
+### qucik veryification
 ```bash
 import torch
 print(torch.cuda.is_available())          # Should be True
 print(torch.cuda.device_count())          # Should show your GPU count
 ```
 
-# Select & Load Base Model (5–20 minutes)
+### Select & Load Base Model (5–20 minutes)
 Purpose: Load a quantized DeepSeek variant to save VRAM.
 Recommended starting models (from Hugging Face):
 
@@ -72,7 +73,7 @@ model, tokenizer = FastLanguageModel.from_pretrained(
 )
 ```
 
-# Prepare Dataset (20–60 minutes)
+### Prepare Dataset (20–60 minutes)
 Purpose: High-quality data is 70–80% of success.
 Format recommendation (Alpaca / ShareGPT style – especially good for reasoning):
 ```bash
@@ -153,7 +154,7 @@ Improve/clean data first (biggest gain)
 Then tune: learning_rate, max_steps/epochs, r
 Rarely: change target_modules or lora_alpha
 
-# Save & Merge (5–10 minutes)
+## Save & Merge (5–10 minutes)
 ```bash
 # Save small LoRA adapter (recommended – very portable)
 model.save_pretrained("polo-super-lora")
@@ -166,7 +167,7 @@ model.save_pretrained_merged(
 )
 ```
 
-# Deploy with Ollama + Dynamic LoRA Loading (10–30 minutes)
+## Deploy with Ollama + Dynamic LoRA Loading (10–30 minutes)
 Purpose: Run your fine-tuned LoRA on top of base model locally.
 
 Install Ollama → https://ollama.com/download
