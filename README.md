@@ -8,6 +8,25 @@ Polo-Super目的是让用户能够基于 Hugging Face 下载的开源大模型�
 最终得到的大模型，主要目的是尽可能模仿我本人与人聊天的风格、语气、习惯和表达方式，让它在日常对话中听起来像真人一样自然、熟悉、有个性。
 整个过程全部在本地完成，不依赖任何云服务，使用消费级硬件即可运行。
 
+# Demo
+
+🎬 **Watch Super Polo in Action**
+
+[![Chat with Super Polo](https://img.shields.io/badge/Demo-Video-blue)](demo/chat_with_polo.mov)
+
+See Super Polo, our personalized AI chatbot, in action! The video demonstrates:
+- Natural conversation flow with personalized character
+- Web-based chat interface
+- Real-time AI responses mimicking human-like interaction
+- Integration with DeepSeek language model
+
+**Demo Features:**
+- ✅ Personalized AI persona (Super Polo)
+- ✅ Natural human-like conversation
+- ✅ Web chat interface
+- ✅ Multi-platform support ready
+- ✅ Plugin system for extended capabilities
+
 # Detailed Guide
 ## Fine-Tuning DeepSeek Models with Unsloth + QLoRA, Distillation, and Ollama Deployment
 

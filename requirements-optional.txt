@@ -7,8 +7,8 @@ gTTS>=2.3.1 # google text to speech
 pyttsx3>=2.90 # pytsx text to speech
 baidu_aip>=4.16.10 # baidu voice
 azure-cognitiveservices-speech # azure voice
-edge-tts # edge-tts
-numpy<=1.24.2
+# edge-tts # edge-tts (commented out due to aiohttp version conflict)
+numpy>=1.24.0
 langid # language detect
 elevenlabs==1.0.3 # elevenlabs TTS
 
@@ -19,8 +19,8 @@ dulwich
 web.py
 wechatpy
 
-# chatgpt-tool-hub plugin
-chatgpt_tool_hub==0.5.0
+# chatgpt-tool-hub plugin (commented out due to aiohttp conflict)
+# chatgpt_tool_hub>=0.5.0
 
 # xunfei spark
 websocket-client==1.2.0
@@ -28,7 +28,7 @@ websocket-client==1.2.0
 # claude bot
 curl_cffi
 # claude API
-anthropic==0.25.0
+anthropic>=0.30.0
 
 # tongyi qwen
 broadscope_bailian

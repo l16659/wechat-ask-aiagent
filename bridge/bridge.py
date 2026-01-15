@@ -18,7 +18,7 @@ class Bridge(object):
             "text_to_voice": conf().get("text_to_voice", "google"),
             "translate": conf().get("translate", "baidu"),
         }
-        # configure AI model
+        # 这边取配置的模型
         bot_type = conf().get("bot_type")
         if bot_type:
             self.btype["chat"] = bot_type

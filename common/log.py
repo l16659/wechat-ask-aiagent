@@ -1,6 +1,7 @@
 import logging
 import sys
 
+
 def _reset_logger(log):
     for handler in log.handlers:
         handler.close()
