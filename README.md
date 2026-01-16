@@ -12,10 +12,13 @@ Polo-Super目的是让用户能够基于 Hugging Face 下载的开源大模型�
 
 🎬 **Watch Super Polo in Action**
 
-<video width="100%" controls>
-  <source src="demo/chat_with_polo.mov" type="video/quicktime">
-  Your browser does not support the video tag.
-</video>
+> **🎥 Click to watch the demo video:**
+
+<p align="center">
+  <a href="demo/chat_with_polo.mov">
+    <img src="https://img.shields.io/badge/▶️_Watch_Demo_Video-FF6B6B?style=for-the-badge&logo=video&logoColor=white" alt="Watch Demo Video">
+  </a>
+</p>
 
 *Demo: Super Polo AI Chatbot showcasing personalized conversation and web interface*
 
