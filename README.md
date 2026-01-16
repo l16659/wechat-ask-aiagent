@@ -12,19 +12,25 @@ Polo-Super目的是让用户能够基于 Hugging Face 下载的开源大模型�
 
 🎬 **Watch Super Polo in Action**
 
-[![Chat with Super Polo](https://img.shields.io/badge/Demo-Video-blue)](demo/chat_with_polo.mov)
+<video width="100%" controls>
+  <source src="demo/chat_with_polo.mov" type="video/quicktime">
+  Your browser does not support the video tag.
+</video>
 
-See Super Polo, our personalized AI chatbot, in action! The video demonstrates:
-- Natural conversation flow with personalized character
-- Web-based chat interface
-- Real-time AI responses mimicking human-like interaction
-- Integration with DeepSeek language model
+*Demo: Super Polo AI Chatbot showcasing personalized conversation and web interface*
+
+**What you'll see in the demo:**
+- 🤖 **Personalized AI Character**: Super Polo interacting naturally like a real person
+- 💬 **Natural Conversations**: Human-like responses without AI stereotypes
+- 🌐 **Web Interface**: Clean, modern chat interface
+- ⚡ **Real-time Responses**: Powered by DeepSeek model
+- 🔧 **Multi-platform Ready**: Supports WeChat, web, and enterprise platforms
 
 **Demo Features:**
-- ✅ Personalized AI persona (Super Polo)
-- ✅ Natural human-like conversation
-- ✅ Web chat interface
-- ✅ Multi-platform support ready
+- ✅ Personalized AI persona (Super Polo the tech enthusiast)
+- ✅ Natural human-like conversation flow
+- ✅ Web-based chat interface
+- ✅ DeepSeek AI integration
 - ✅ Plugin system for extended capabilities
 
 # Detailed Guide
